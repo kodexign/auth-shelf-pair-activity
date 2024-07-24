@@ -60,7 +60,7 @@ const deleteItem = (id) => {
         <input onChange={(event) => setNewImage(event.target.value)} value={NewImage}/>
 
         <label>Description</label>
-        <input onChange={(event) => setNewDescriptionha(event.target.value)} value={NewDescription}/>
+        <input onChange={(event) => setNewDescription(event.target.value)} value={NewDescription}/>
 
         <button> Add </button>
       </form>
@@ -79,7 +79,7 @@ const deleteItem = (id) => {
                         <img src={item.image_url} alt={item.description} />
                         <br />
                         <div className="desc">{item.description}</div>
-                        <div className="userName">added by: {item.username}</div>
+                        <div className="username"> {item.username}</div>
                         <div style={{textAlign: 'center', padding: '5px'}}>
                           <button onClick ={() => deleteItem(item.id)}  style={{cursor: 'pointer'}}>Delete</button>
                         </div>
